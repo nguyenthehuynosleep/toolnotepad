@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCV.JS</title>
+    <style>
+        #image-container {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            border: 2px solid black;
+            overflow: hidden;
+        }
+
+        #preview-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container">
+        <img id="preview-image" src="#" alt="Preview">
+    </div>
+    <input type="file" id="image-input">
+    <input type="text" id="text-input" placeholder="Nhập văn bản...">
+    <input type="color" id="text-color-input" value="#000000">
+    <button id="add-text-button">Thêm Văn Bản</button>
+    <button id="blurButton">blur</button> 
+    <button id="grayButton">grayColor</button>
+</body>
+    <script src="opencv.js"></script>
+    <script src="script.js"></script>
+</html>

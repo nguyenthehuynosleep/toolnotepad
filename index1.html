@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCV</title>
+</head>
+<body>
+
+<img id="input_img">
+    <div>
+        <input type="file" id="file_input">
+        <button  style="background-color: yellowgreen; width: 120px; height: 40px; border-radius: 10px; border: 1dpx solid black;" id="showButton">Hiển Thị Ảnh</button>
+        <button  style="background-color: yellowgreen; width: 120px; height: 40px; border-radius: 10px; border: 1dpx solid black;" id="blurButton">Làm Mờ Ảnh</button>
+        <button  style="background-color: yellowgreen; width: 120px; height: 40px; border-radius: 10px; border: 1dpx solid black;" id="grayButton">Đổi màu ảnh</button>  
+        <button style="background-color: yellowgreen; width: 120px; height: 40px; border-radius: 10px; border: 1dpx solid black;" id="zoomInButton">Zoom In</button>
+        <button  style="background-color: yellowgreen; width: 120px; height: 40px; border-radius: 10px; border: 1dpx solid black;" id="zoomOutButton">Zoom Out</button>
+        <!-- <button  style="background-color: yellowgreen; width: 120px; height: 40px; border-radius: 10px; border: 1dpx solid black;" id="increaseBrightnessButton">Brightness</button> -->
+        <canvas id="output"></canvas>
+    </div>
+    <input type="text" id="text_input" placeholder="Nhập văn bản">
+    <button style="background-color: yellowgreen; width: 120px; height: 40px; border-radius: 10px; border: 1px solid black;" id="addTextButton">Thêm Text</button>
+    </div>
+    <script src="opencv.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
